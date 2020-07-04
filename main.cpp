@@ -1,7 +1,15 @@
 #include <iostream>
 
 int main() {
-  std::cout << "Hello World!\n";
+  int number;
+  int countDigits = 0;
+  std::cout << "Введите число: ";
+  std::cin >> number;
+  while (number > 0){
+    number = number / 10;
+    countDigits++;
+  }
+  std::cout << "В вашем числе количество цифр = " << countDigits;
 }
 
 /*
